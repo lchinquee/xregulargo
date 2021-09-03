@@ -36,7 +36,16 @@ function ContactForm() {
 
     return (
         <section>
-            <h1 data-testid="h1tag">Contact me</h1>
+            <h2>My Contact Info</h2>
+            <ul>
+                <li>
+                    <p>Email address: lchinquee@gmail.com</p>
+                </li>
+                <li>
+                    <span>Phone #: </span><a href="tel:201-555-5555">201-555-5555</a>
+                </li>
+            </ul>
+            <h2 data-testid="h1tag">Contact me</h2>
             <form id="contact-form" onSubmit={handleSubmit}>
                 <div>
                     <label htmlFor="name">Name:</label>
