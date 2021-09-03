@@ -3,14 +3,20 @@ import Nav from './components/Nav';
 import Header from './components/Header';
 import Project from './components/Project';
 import Footer from './components/Footer';
+import ContactForm from './components/Contact';
+import About from './components/About';
 import './App.css';
 
 function App() {
   // Categories for header navigation
   const [categories] = useState([
     {
+      name: 'About Me',
+      description: 'General information about Leslie ChinQuee'
+    },
+    {
       name: 'Portfolio',
-      description: 'Portfolio of projects Leslie has completed',
+      description: 'Projects that Leslie has completed'
     },
     { name: 'Resume', description: "Leslie ChinQuee's Resume link and list of skills" }
   ]);
@@ -27,8 +33,16 @@ function App() {
         setContactSelected={setContactSelected}
       ></Nav>
       <main>
-        <Header></Header>
-        <Project></Project>
+        <div>
+          {!contactSelected ? (
+            <>
+              <About></About>
+              <Project></Project>
+            </>
+          ) : (
+            <ContactForm></ContactForm>
+          )}
+        </div>
       </main>
       <Footer></Footer>
     </div>
