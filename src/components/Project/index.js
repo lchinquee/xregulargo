@@ -8,32 +8,30 @@ function Project() {
                     Project List
                 </h2>
             </div>
-            <div className="flex-work">
+            <div className="flex-row">
                 <div className="rb-content">
+                    <h3>
+                        {/* What I Had For Dinner Project 2 */}
+                        <a href="https://whatihadfordinner.herokuapp.com/">What I Had For Dinner</a>
+                        <a href="https://github.com/lchinquee/whatihadfordinner">GitHub Link</a>
+                    </h3>
+                    <p>
+                        CSS/Animate/JavaScript/Node/Express
+                    </p>
+                </div>
+                <div className="led-content">
                     <div>
                         <h3>
-                            {/* What I Had For Dinner Project 2 */}
-                            <a href="https://whatihadfordinner.herokuapp.com/">What I Had For Dinner</a>
-                            <a href="https://github.com/lchinquee/whatihadfordinner">GitHub Link</a>
+                            {/* What's For Dinner Project 1 */}
+                            <a href="https://jilliana328.github.io/whats-for-dinner/">What's For Dinner</a>
+                            <a href="https://github.com/lchinquee/whats-for-dinner">GitHub Link</a>
                         </h3>
                         <p>
-                            CSS/Animate/JavaScript/Node/Express
+                            HTML/CSS/JavaScript/JQuery
                         </p>
                     </div>
                 </div>
                 <div className="flex-row">
-                    <div className="led-content">
-                        <div>
-                            <h3>
-                                {/* What's For Dinner Project 1 */}
-                                <a href="https://jilliana328.github.io/whats-for-dinner/">What's For Dinner</a>
-                                <a href="https://github.com/lchinquee/whats-for-dinner">GitHub Link</a>
-                            </h3>
-                            <p>
-                                HTML/CSS/JavaScript/JQuery
-                            </p>
-                        </div>
-                    </div>
                     <div className="calc-content">
                         <div>
                             <h3>
@@ -44,9 +42,8 @@ function Project() {
                             <p>
                                 HTML/CSS/JavaScript
                             </p>
+                        </div>
                     </div>
-                </div>
-                <div className="flex-row2">
                     <div className="pzl-content">
                         <div>
                             <h3>
@@ -59,29 +56,31 @@ function Project() {
                             </p>
                         </div>
                     </div>
-                    <div className="surf-content">
-                        <div>
-                            <h3>
-                                {/* Run Buddy In-Class Project */}
-                                <a href="https://lchinquee.github.io/run-buddy/">Run Buddy</a>
-                                <a href="https://github.com/lchinquee/run-buddy">GitHub Link</a>
-                            </h3>
-                            <p>
-                                HTML/CSS
-                            </p>
+                    <div className="flex-row">
+                        <div className="surf-content">
+                            <div>
+                                <h3>
+                                    {/* Run Buddy In-Class Project */}
+                                    <a href="https://lchinquee.github.io/run-buddy/">Run Buddy</a>
+                                    <a href="https://github.com/lchinquee/run-buddy">GitHub Link</a>
+                                </h3>
+                                <p>
+                                    HTML/CSS
+                                </p>
+                            </div>
+
                         </div>
-                        </div>
-                    </div>
-                    <div className="surf-content">
-                        <div>
-                            <h3>
-                                {/* Work Day Scheduler Challenge */}
-                                <a href="https://github.com/lchinquee/humorite">Work Day Scheduler</a>
-                                <a href="https://lchinquee.github.io/humorite/">GitHub Link</a>
-                            </h3>
-                            <p>
-                                React/JavaScript/CSS
-                            </p>
+                        <div className="surf-content">
+                            <div>
+                                <h3>
+                                    {/* Work Day Scheduler Challenge */}
+                                    <a href="https://github.com/lchinquee/humorite">Work Day Scheduler</a>
+                                    <a href="https://lchinquee.github.io/humorite/">GitHub Link</a>
+                                </h3>
+                                <p>
+                                    React/JavaScript/CSS
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
