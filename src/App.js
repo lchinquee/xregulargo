@@ -40,18 +40,11 @@ function App() {
     <BrowserRouter>
         <Header></Header>
         <Switch>
-            <Route exact path="/about">
-              <About></About>
-            </Route>
-            <Route exact path="/portfolio">
-              <Project></Project>
-            </Route>
-            <Route exact path="/contact">
-              <ContactForm></ContactForm>
-            </Route>
-            <Route exact path="/resume">
-              <Resume></Resume>
-            </Route>
+            <Route exact path="/" component={About}/>
+            <Route exact path="/about" component={About}/>
+            <Route exact path="/portfolio" component={Project}/>
+            <Route exact path="/contact" component={ContactForm}/>
+            <Route exact path="/resume" component={Resume}/>
         </Switch>
         <Footer></Footer>
     </BrowserRouter>   
