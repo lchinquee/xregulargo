@@ -8,33 +8,6 @@ import Header from './components/Header';
 import { Route, BrowserRouter, Switch } from 'react-router-dom';
 import './App.css';
 
-// function App() {  
-//   const [currentCategory, setCurrentCategory] = useState("about");
-
-//   function renderCategory() {
-//     if(currentCategory === "about") {
-//       return <About></About>
-//     } else if(currentCategory === "portfolio") {
-//       return <Project></Project>
-//     } else if(currentCategory === "contact") {
-//       return <ContactForm></ContactForm>
-//     } else if(currentCategory === "resume") {
-//       <Resume></Resume>
-//     }
-//   }
-//   return (
-//     <div>
-//       <main>
-//         <Header setCurrentCategory={setCurrentCategory}></Header>
-//         <div>
-//           {renderCategory()}
-//         </div>
-//       </main>
-//       <Footer></Footer>
-//     </div>
-//   );
-// }
-
 function App() {
   return (
     <BrowserRouter>
