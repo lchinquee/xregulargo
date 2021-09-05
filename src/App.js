@@ -1,53 +1,61 @@
-import React, { useState } from 'react';
-import Nav from './components/Nav';
+import React from 'react';
 import Project from './components/Project';
 import Footer from './components/Footer';
 import ContactForm from './components/Contact';
 import About from './components/About';
 import Resume from './components/Resume';
+import Header from './components/Header';
+import { Route, BrowserRouter, Switch } from 'react-router-dom';
 import './App.css';
 
-function App() {
-  // Categories for header navigation
-  const [categories] = useState([
-    {
-      name: 'About Me',
-      description: 'General information about Leslie ChinQuee'
-    },
-    {
-      name: 'Portfolio',
-      description: 'Projects that Leslie has completed'
-    },
-    { name: 'Resume', description: "Leslie ChinQuee's Resume link and list of skills" }
-  ]);
-  const [currentCategory, setCurrentCategory] = useState(categories[0]);
-  const [contactSelected, setContactSelected] = useState(false);
+// function App() {  
+//   const [currentCategory, setCurrentCategory] = useState("about");
 
+//   function renderCategory() {
+//     if(currentCategory === "about") {
+//       return <About></About>
+//     } else if(currentCategory === "portfolio") {
+//       return <Project></Project>
+//     } else if(currentCategory === "contact") {
+//       return <ContactForm></ContactForm>
+//     } else if(currentCategory === "resume") {
+//       <Resume></Resume>
+//     }
+//   }
+//   return (
+//     <div>
+//       <main>
+//         <Header setCurrentCategory={setCurrentCategory}></Header>
+//         <div>
+//           {renderCategory()}
+//         </div>
+//       </main>
+//       <Footer></Footer>
+//     </div>
+//   );
+// }
+
+function App() {
   return (
-    <div>
-      <Nav
-        categories={categories}
-        setCurrentCategory={setCurrentCategory}
-        currentCategory={currentCategory}
-        contactSelected={contactSelected}
-        setContactSelected={setContactSelected}
-      ></Nav>
-      <main>
-        <div>
-          {!contactSelected ? (
-            <>
+    <BrowserRouter>
+        <Header></Header>
+        <Switch>
+            <Route exact path="/about">
               <About></About>
-            </>
-          ) : (
-            <ContactForm></ContactForm>
-          )}
-        </div>
-        <Project></Project>
-        <Resume></Resume>
-      </main>
-      <Footer></Footer>
-    </div>
-  );
+            </Route>
+            <Route exact path="/portfolio">
+              <Project></Project>
+            </Route>
+            <Route exact path="/contact">
+              <ContactForm></ContactForm>
+            </Route>
+            <Route exact path="/resume">
+              <Resume></Resume>
+            </Route>
+        </Switch>
+        <Footer></Footer>
+    </BrowserRouter>   
+  )
 }
 
 export default App;

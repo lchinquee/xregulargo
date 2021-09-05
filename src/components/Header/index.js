@@ -1,10 +1,14 @@
 import React from 'react';
+import Nav from '../Nav';
 
 function Header() {
   return (
-    <header>
-
-    </header>
+    <div>
+      <h1 className="flex-row px-1">
+        Leslie ChinQuee
+      </h1>
+        <Nav></Nav>
+    </div>
   );
 }
 

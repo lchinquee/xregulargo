@@ -1,15 +1,16 @@
 import React from 'react';
+import { withRouter } from 'react-router';
 
 function Project() {
     return (
         <section>
-            <div class="work-title">
-                <h2 class="section-title">
+            <div className="work-title">
+                <h2 className="section-title">
                     Work
                 </h2>
             </div>
-            <div class="flex-work">
-                <div class="rb-content">
+            <div className="flex-work">
+                <div className="rb-content">
                     <div>
                         <h3>
                             {/* What I Had For Dinner Project 2 */}
@@ -20,8 +21,8 @@ function Project() {
                         </p>
                     </div>
                 </div>
-                <div class="flex-row">
-                    <div class="led-content">
+                <div className="flex-row">
+                    <div className="led-content">
                         <div>
                             <h3>
                                 {/* Coding Quiz Challenge */}
@@ -32,11 +33,10 @@ function Project() {
                             </p>
                         </div>
                     </div>
-                    <div class="calc-content">
+                    <div className="calc-content">
                         <div>
                             <h3>
-                                
-                                <a href="">Calculator</a>
+                                <a href="https://jilliana328.github.io/whats-for-dinner/">Calculator</a>
                             </h3>
                             <p>
                                 React/JavaScript/CSS
@@ -44,8 +44,8 @@ function Project() {
                         </div>
                     </div>
                 </div>
-                <div class="flex-row2">
-                    <div class="pzl-content">
+                <div className="flex-row2">
+                    <div className="pzl-content">
                         <div>
                             <h3>
                                 {/* What's For Dinner Project 1 */}
@@ -56,7 +56,7 @@ function Project() {
                             </p>
                         </div>
                     </div>
-                    <div class="surf-content">
+                    <div className="surf-content">
                         <div>
                             <h3>
                                 {/* Includes link to Run Buddy project */}
@@ -73,4 +73,4 @@ function Project() {
     );
 }
 
-export default Project;
+export default withRouter(Project);

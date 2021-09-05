@@ -5,7 +5,7 @@ function Resume() {
     <section>
         <h2>Resume Link</h2>
         <div>
-            <a href="./resume.pdf">Leslie ChinQuee's Resume</a>
+            <a href="https://github.com/lchinquee/xregulargo/files/7108588/resume.pdf">Leslie ChinQuee's Resume</a>
         </div>
         <h2>List of Proficiencies</h2>
         <ul>
