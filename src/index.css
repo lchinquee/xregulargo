@@ -65,10 +65,6 @@ h2 {
   font-weight: bold;
 }
 
-h3 {
-  font-size: 1.75rem;
-}
-
 h4 {
   font-size: 1.5rem;
 }
@@ -87,7 +83,7 @@ nav {
 
 p {
   font-size: 1.1rem;
-  margin: 50px;
+  margin: 10px 50px;
   box-shadow: 4px 4px var(--light);
   background-color: var(--primary);
   padding: 15px;
@@ -296,6 +292,12 @@ a {
   margin-left: 20px;
 }
 
+h3 {
+  color: var(--light);
+  font-size: 1.75rem;
+  background-color: var(--dark);
+  border-radius: 5px;
+}
 
 .navActive {
   color: var(--secondary);
@@ -312,15 +314,19 @@ a {
   margin: 0px 20px 0px auto;
 }
 
-.rb-content {
-  /* background-image: url(../images/what-i-had-for-dinner.JPG); */
-  padding: 300px 100px 100px 0px;
+.rb-content, .wd-content {
+  background-image: url(assets/images/what-i-had-for-dinner.JPG);
+  padding: 200px 100px 100px 0px;
   background-size: cover;
   display: flex;
   background-position: bottom;
   border: 3px solid var(--primary-color);
   position: relative;
-  margin: 10px 0px;
+  margin: 10px 0px 50px 0px;
+}
+
+.wd-content {
+  background-image: url(assets/images/whats-for-dinner.JPG);
 }
 
 .led-content, .calc-content, .pzl-content, .surf-content {
@@ -328,18 +334,18 @@ a {
 }
 
 .led-content {
-  /* background-image: url(../images/coding-quiz.JPG); */
+  background-image: url(assets/images/coding-quiz.JPG);
   padding: 100px 100px 100px 0px;
   background-size: cover;
   display: flex;
   background-position: bottom;
   border: 3px solid var(--primary-color);
   position: relative;
-  margin: 10px 20px 10px 0px;
+  margin: 10px 20px 50px 0px;
 }
 
 .calc-content {
-  /* background-image: url(../images/calc.jpg); */
+  background-image: url(assets/images/readinglist.JPG);
   padding: 100px 100px 100px 0px;
   background-size: cover;
   display: flex;
@@ -350,18 +356,18 @@ a {
 }
 
 .pzl-content {
-  /* background-image: url(../images/whats-for-dinner.JPG); */
+  background-image: url(assets/images/scheduler.JPG);
   padding: 100px 100px 100px 0px;
   background-size: cover;
   display: flex;
   background-position: bottom;
   border: 3px solid var(--primary-color);
   position: relative;
-  margin: 10px 20px 10px 0px;
+  margin: 10px 20px 50px 0px;
 }
 
 .surf-content {
-  /* background-image: url(../images/run-buddy.jpg); */
+  background-image: url(assets/images/run-buddy.jpg);
   padding: 100px 100px 100px 0px;
   background-size: cover;
   display: flex;
@@ -396,39 +402,5 @@ a {
 .rb-content p, .led-content p, .calc-content p, .pzl-content p, .surf-content p {
   font-size: x-small;
   color: var(--tertiary-color);
-}
-
-.rb-content:hover {
-  /* background: url(../images/what-i-had-for-dinner.JPG); */
-  background-size: cover;
-  background-position: bottom;
-  opacity: 0.5;
-}
-
-.led-content:hover {
-  /* background: url(../images/coding-quiz.JPG); */
-  background-size: cover;
-  background-position: bottom;
-  opacity: 0.5;
-}
-
-.calc-content:hover {
-  /* background: url(../images/calc.jpg); */
-  background-size: cover;
-  background-position: bottom;
-  opacity: 0.5;
-}
-
-.pzl-content:hover {
-  /* background: url(../images/whats-for-dinner.JPG); */
-  background-size: cover;
-  background-position: bottom;
-  opacity: 0.5;
-}
-
-.surf-content:hover {
-  /* background: url(../images/run-buddy.jpg); */
-  background-size: cover;
-  background-position: bottom;
-  opacity: 0.5;
+  background-color: none;
 }
