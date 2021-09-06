@@ -13,7 +13,7 @@ function App() {
     <BrowserRouter>
         <Header></Header>
         <Switch>
-            <Route exact path="/" component={About}/>
+            <Route exact path="/xregulargo" component={About}/>
             <Route exact path="/about" component={About}/>
             <Route exact path="/portfolio" component={Project}/>
             <Route exact path="/contact" component={ContactForm}/>
