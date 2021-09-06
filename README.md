@@ -49,7 +49,7 @@ This challenge, assigned by Rutgers Coding Bootcamp, required the creation of an
 ## GitHub Repo
   [Link to GitHub Repo](https://github.com/lchinquee/xregulargo)
 
-## Heroku
+## GitHub Pages
   [Link to Website](http://lchinquee.github.io/xregulargo)
 
 # References
