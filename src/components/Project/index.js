@@ -24,7 +24,7 @@ function Project() {
                 <div className="wd-content">
                         <div>
                             <h3>
-                                {/* <!--Includes link to Run Buddy project--> */}
+                                {/* <!--Includes link to What's For Dinner Project 1--> */}
                                 <a href="https://jilliana328.github.io/whats-for-dinner/">What's For Dinner</a>
                                 <a href="https://github.com/lchinquee/whats-for-dinner">GitHub</a>
                             </h3>
@@ -75,12 +75,12 @@ function Project() {
                     <div className="surf-content">
                         <div>
                             <h3>
-                                {/* <!--Includes link to Run Buddy project--> */}
-                                <a href="https://lchinquee.github.io/run-buddy/">Run Buddy</a>
-                                <a href="https://github.com/lchinquee/run-buddy">GitHub</a>
+                                {/* <!--Includes link to Be Our Guest Project 3--> */}
+                                <a href="https://be-our-guest.herokuapp.com/">Be Our Guest</a>
+                                <a href="https://github.com/lchinquee/be-our-guest">GitHub</a>
                             </h3>
                             <p>
-                                HTML/CSS
+                                CSS/JavaScript/Node/Express/MongoDB/Bootstrap/GraphQL
                             </p>
                         </div>                        
                     </div>
